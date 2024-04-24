@@ -36,7 +36,7 @@ WHERE `cfu` > 10
 
 SELECT *
 FROM `students`
-WHERE `date_of_birth` >= '1993-01-01'
+WHERE `date_of_birth` <= '1993-01-01'
 
 
 
@@ -113,7 +113,7 @@ FROM `departments`
 ---Quanti sono gli insegnanti che non hanno un numero di telefono? (50)---
 
 
-SELECT *
+SELECT COUNT(*) AS `insegnanti_senza_telefono`
 FROM `teachers`
 WHERE `phone` IS NULL
 
